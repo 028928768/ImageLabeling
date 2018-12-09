@@ -13,9 +13,13 @@
 		150F53CA21B82601009503A3 /* ImageLabeling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 150F53C821B82601009503A3 /* ImageLabeling.xcdatamodeld */; };
 		150F53CC21B82603009503A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150F53CB21B82603009503A3 /* Assets.xcassets */; };
 		150F53CF21B82603009503A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150F53CD21B82603009503A3 /* LaunchScreen.storyboard */; };
+		150F53D721B8282A009503A3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F53D621B8282A009503A3 /* CameraViewController.swift */; };
+		150F53DD21B836F5009503A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150F53DC21B836F5009503A3 /* GoogleService-Info.plist */; };
+		241EC4302D3FB021CE524CF9 /* Pods_ImageLabeling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A27434D75145A9853773B9 /* Pods_ImageLabeling.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11A27434D75145A9853773B9 /* Pods_ImageLabeling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageLabeling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		150F53BE21B82601009503A3 /* ImageLabeling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLabeling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		150F53C121B82601009503A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		150F53C321B82601009503A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		150F53CB21B82603009503A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		150F53CE21B82603009503A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		150F53D021B82603009503A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150F53D621B8282A009503A3 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		150F53DC21B836F5009503A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		70B4CEB37DC6219EB5A2013F /* Pods-ImageLabeling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageLabeling.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageLabeling/Pods-ImageLabeling.release.xcconfig"; sourceTree = "<group>"; };
+		86209CFEA0F431DD3BDD56D9 /* Pods-ImageLabeling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageLabeling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageLabeling/Pods-ImageLabeling.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241EC4302D3FB021CE524CF9 /* Pods_ImageLabeling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				150F53C021B82601009503A3 /* ImageLabeling */,
 				150F53BF21B82601009503A3 /* Products */,
+				AD37EC34C8AA98B9D64D50B0 /* Pods */,
+				E8BF32F4B1D7809B6504BD2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				150F53C121B82601009503A3 /* AppDelegate.swift */,
 				150F53C321B82601009503A3 /* ViewController.swift */,
 				150F53C521B82601009503A3 /* Main.storyboard */,
+				150F53D621B8282A009503A3 /* CameraViewController.swift */,
 				150F53CB21B82603009503A3 /* Assets.xcassets */,
 				150F53CD21B82603009503A3 /* LaunchScreen.storyboard */,
 				150F53D021B82603009503A3 /* Info.plist */,
+				150F53DC21B836F5009503A3 /* GoogleService-Info.plist */,
 				150F53C821B82601009503A3 /* ImageLabeling.xcdatamodeld */,
 			);
 			path = ImageLabeling;
+			sourceTree = "<group>";
+		};
+		AD37EC34C8AA98B9D64D50B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86209CFEA0F431DD3BDD56D9 /* Pods-ImageLabeling.debug.xcconfig */,
+				70B4CEB37DC6219EB5A2013F /* Pods-ImageLabeling.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8BF32F4B1D7809B6504BD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11A27434D75145A9853773B9 /* Pods_ImageLabeling.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 150F53D321B82603009503A3 /* Build configuration list for PBXNativeTarget "ImageLabeling" */;
 			buildPhases = (
+				FA22631F84029C12257C1021 /* [CP] Check Pods Manifest.lock */,
 				150F53BA21B82601009503A3 /* Sources */,
 				150F53BB21B82601009503A3 /* Frameworks */,
 				150F53BC21B82601009503A3 /* Resources */,
+				22DDFDB707402481CD33B1A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				150F53CF21B82603009503A3 /* LaunchScreen.storyboard in Resources */,
+				150F53DD21B836F5009503A3 /* GoogleService-Info.plist in Resources */,
 				150F53CC21B82603009503A3 /* Assets.xcassets in Resources */,
 				150F53C721B82601009503A3 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +166,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22DDFDB707402481CD33B1A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ImageLabeling/Pods-ImageLabeling-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageLabeling/Pods-ImageLabeling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA22631F84029C12257C1021 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageLabeling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		150F53BA21B82601009503A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				150F53C421B82601009503A3 /* ViewController.swift in Sources */,
+				150F53D721B8282A009503A3 /* CameraViewController.swift in Sources */,
 				150F53C221B82601009503A3 /* AppDelegate.swift in Sources */,
 				150F53CA21B82601009503A3 /* ImageLabeling.xcdatamodeld in Sources */,
 			);
@@ -284,9 +375,11 @@
 		};
 		150F53D421B82603009503A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86209CFEA0F431DD3BDD56D9 /* Pods-ImageLabeling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A8VNC6KC9;
 				INFOPLIST_FILE = ImageLabeling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,9 +394,11 @@
 		};
 		150F53D521B82603009503A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B4CEB37DC6219EB5A2013F /* Pods-ImageLabeling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A8VNC6KC9;
 				INFOPLIST_FILE = ImageLabeling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
