@@ -22,6 +22,7 @@ class CameraViewController: UIViewController {
     //@IBOutlet weak var visualView: UIVisualEffectView!
     let config = VisionCloudDetectorOptions()
     
+
     lazy var vision = Vision.vision()
     //let labelDetector = vision.labelDetector(options: )
     
@@ -42,7 +43,9 @@ class CameraViewController: UIViewController {
         super.viewDidLoad()
        // let config = VisionLabelDetectorOptions(confidenceThreshold: 0.5)
         config.maxResults = 30
-        let labelDetector = vision.cloudLabelDetector(options: config)
+        let labelDetector = vision.cloudImageLabeler()
+        //let labelDetector = vision.cloudImageLabeler(options:VisionCloudImageLabelerOptions)
+        //let labelDetector = vision.cloudLabelDetector(options: config)
        // assignBackGround()
         visualUIview.image = UIImage(named: "BackGroundIMG")
         cameraIcon.image = cameraImage
@@ -159,16 +162,19 @@ extension CameraViewController : AVCapturePhotoCaptureDelegate {
 // MARK: ML Kit label detect
 extension CameraViewController {
     func labelImage(image : UIImage){
-        let labelDetector = vision.labelDetector()
+        let labelDetector = vision.cloudImageLabeler()
+        //let labelDetector = vision.labelDetector()
         let visionImage = VisionImage(image: image)
-        labelDetector.detect(in: visionImage){ (labels, error) in
+        labelDetector.process(visionImage){ (labels, error) in
             guard error == nil , let labels = labels, !labels.isEmpty else {
               //  self.showError(errorMessage: error?.localizedDescription ?? "Something went wrong")
                 return
             }
             let result = labels.map({
-                return "\($0.label) : \($0.confidence)"
+                return "\(String(describing: $0.accessibilityLabel)) : \($0.confidence)"
             }).joined(separator: "\n")
+            
+            
             self.resultText.text = result
          //   self.showResultScreen(image: image, resultString: result)
         }

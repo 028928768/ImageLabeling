@@ -1,0 +1,7 @@
+use_frameworks!
+target 'ImageLabeling' do
+	pod 'GoogleMaps'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Core'
+	pod 'Firebase/MLVision'
+end
